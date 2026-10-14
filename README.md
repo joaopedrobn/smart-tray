@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="README.md">🇺🇸 English</a>
+  &nbsp; | &nbsp;
+  <a href="README.pt-BR.md">🇧🇷 Português (Brasil)</a>
+</p>
+
 # Smart Tray
 
 **Local smart-device controls, one compact Windows panel.**
