@@ -52,3 +52,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Language selector flags
+
+The local Brazilian and United States SVG flags in `docs/images/flag-br.svg` and
+`docs/images/flag-us.svg` are from [flag-icons](https://github.com/lipis/flag-icons),
+commit `086f7e97d657358203916dbe84f61c2bccaa81eb`, paths `flags/4x3/br.svg` and `flags/4x3/us.svg`.
+Copyright (c) 2013 Panayiotis Lipiridis. Used under MIT; the original license is
+retained in `licenses/flag-icons-LICENSE.txt`. No external flag rendering service
+is used by the README.

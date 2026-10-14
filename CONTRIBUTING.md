@@ -6,7 +6,7 @@ its asynchronous LAN communication, explicit user actions and credential protect
 ## Development setup
 
 Use Windows 11 x64, Python 3.14, Git and a local virtual environment. Follow
-[Getting started](README.md#getting-started). Install `requirements.txt` for the
+[Getting started](README.en.md#getting-started). Install `requirements.txt` for the
 application and tests, and `requirements-build.txt` for packaging. Node is optional:
 one offline MiniApp helper test is skipped when Node is unavailable.
 
