@@ -1,0 +1,125 @@
+[
+  {
+    "name": "tinytuya",
+    "version": "1.20.0",
+    "license": null,
+    "files": [
+      "licenses/dependencies/tinytuya/LICENSE"
+    ]
+  },
+  {
+    "name": "PySide6",
+    "version": "6.12.0",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "files": [
+      "licenses/dependencies/PySide6/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "PySide6_Essentials",
+    "version": "6.12.0",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "files": [
+      "licenses/dependencies/PySide6_Essentials/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "PySide6_Addons",
+    "version": "6.12.0",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "files": [
+      "licenses/dependencies/PySide6_Addons/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "shiboken6",
+    "version": "6.12.0",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "files": [
+      "licenses/dependencies/shiboken6/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.2",
+    "license": "Apache-2.0 OR BSD-3-Clause",
+    "files": [
+      "licenses/dependencies/cryptography/LICENSE",
+      "licenses/dependencies/cryptography/LICENSE.APACHE",
+      "licenses/dependencies/cryptography/LICENSE.BSD"
+    ]
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses/dependencies/requests/LICENSE",
+      "licenses/dependencies/requests/NOTICE"
+    ]
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "license": "MIT",
+    "files": [
+      "licenses/dependencies/urllib3/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "files": [
+      "licenses/dependencies/certifi/LICENSE"
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/dependencies/idna/LICENSE.md"
+    ]
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.2",
+    "license": "MIT",
+    "files": [
+      "licenses/dependencies/charset-normalizer/LICENSE"
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "files": [
+      "licenses/dependencies/cffi/LICENSE"
+    ]
+  },
+  {
+    "name": "pycparser",
+    "version": "3.11",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/dependencies/pycparser/LICENSE"
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "files": [
+      "licenses/dependencies/pytest/LICENSE"
+    ]
+  },
+  {
+    "name": "PyInstaller",
+    "version": "6.22.3",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "files": [
+      "licenses/dependencies/PyInstaller/COPYING.txt"
+    ]
+  }
+]

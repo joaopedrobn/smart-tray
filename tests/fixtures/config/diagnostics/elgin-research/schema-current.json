@@ -1,0 +1,1227 @@
+{
+  "device_id_masked": "exampl…0003",
+  "queries": [
+    {
+      "source": "device_spec_v1_1",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": 1,
+          "ability_id": null,
+          "code": "switch",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 2,
+          "ability_id": null,
+          "code": "temp_set",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 160,
+            "max": 900,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 3,
+          "ability_id": null,
+          "code": "temp_current",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": -300,
+            "max": 1760,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 4,
+          "ability_id": null,
+          "code": "mode",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "cold",
+              "hot",
+              "wet",
+              "wind",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 8,
+          "ability_id": null,
+          "code": "mode_eco",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 12,
+          "ability_id": null,
+          "code": "heat",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 13,
+          "ability_id": null,
+          "code": "light",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 14,
+          "ability_id": null,
+          "code": "lock",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 28,
+          "ability_id": null,
+          "code": "power_consumption",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 0,
+            "max": 255,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 33,
+          "ability_id": null,
+          "code": "switch_horizontal",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 34,
+          "ability_id": null,
+          "code": "gear_horizontal",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "off"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 102,
+          "ability_id": null,
+          "code": "sleep",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 106,
+          "ability_id": null,
+          "code": "health",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 1,
+          "ability_id": null,
+          "code": "switch",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 2,
+          "ability_id": null,
+          "code": "temp_set",
+          "type": "Integer",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "min": 160,
+            "max": 900,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 4,
+          "ability_id": null,
+          "code": "mode",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "cold",
+              "hot",
+              "wet",
+              "wind",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 8,
+          "ability_id": null,
+          "code": "mode_eco",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 12,
+          "ability_id": null,
+          "code": "heat",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 13,
+          "ability_id": null,
+          "code": "light",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 14,
+          "ability_id": null,
+          "code": "lock",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 33,
+          "ability_id": null,
+          "code": "switch_horizontal",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 34,
+          "ability_id": null,
+          "code": "gear_horizontal",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "off"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 102,
+          "ability_id": null,
+          "code": "sleep",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 106,
+          "ability_id": null,
+          "code": "health",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    },
+    {
+      "source": "device_spec_iot03",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "temp_set",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 160,
+            "max": 900,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "temp_current",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": -300,
+            "max": 1760,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "mode",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "cold",
+              "hot",
+              "wet",
+              "wind",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "mode_eco",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "heat",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "light",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "lock",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "power_consumption",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 0,
+            "max": 255,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch_horizontal",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "gear_horizontal",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "off"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "sleep",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "health",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "temp_set",
+          "type": "Integer",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "min": 160,
+            "max": 900,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "mode",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "cold",
+              "hot",
+              "wet",
+              "wind",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "mode_eco",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "heat",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "light",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "lock",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch_horizontal",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "gear_horizontal",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "off"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "sleep",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "health",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    },
+    {
+      "source": "things_model",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": null,
+          "ability_id": 1,
+          "code": "Power",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 2,
+          "code": "temp_set",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 900,
+            "min": 160,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 3,
+          "code": "temp_current",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 1760,
+            "min": -300,
+            "scale": 1,
+            "step": 10
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 4,
+          "code": "mode",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "cold",
+              "hot",
+              "wet",
+              "wind",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 5,
+          "code": "windspeed",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "mute",
+              "low",
+              "mid",
+              "high",
+              "auto",
+              "strength",
+              "mid_low",
+              "mid_high"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 8,
+          "code": "eco",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 12,
+          "code": "heat",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 13,
+          "code": "light",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 14,
+          "code": "child_lock",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 19,
+          "code": "C_F",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "C",
+              "F"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 28,
+          "code": "power_consumption",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 255,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 31,
+          "code": "gear_vertical",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "vertical_1",
+              "vertical_2",
+              "vertical_3",
+              "vertical_4",
+              "vertical_5",
+              "auto"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 33,
+          "code": "switch_horizontal",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 34,
+          "code": "gear_horizontal",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "off",
+              "both",
+              "left",
+              "right"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 101,
+          "code": "filter_cleaning",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 102,
+          "code": "sleep",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 103,
+          "code": "clean",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 104,
+          "code": "anti_mould",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 105,
+          "code": "up_down_wind",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 106,
+          "code": "health",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 107,
+          "code": "fault_up",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 30,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 109,
+          "code": "countdown_on",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 110,
+          "code": "countdown_off",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 111,
+          "code": "countdown_hour",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 23,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 112,
+          "code": "countdown_min",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 59,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 113,
+          "code": "power_limit",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 100,
+            "min": 30,
+            "scale": 0,
+            "step": 1,
+            "unit": "%"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 114,
+          "code": "power_limit_switch",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 115,
+          "code": "comfortable_wind",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 116,
+          "code": "zero_wind_sensation",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 117,
+          "code": "fresh",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 118,
+          "code": "portable_sensing_code",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 119,
+          "code": "smart_enjoyment_wind",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 120,
+          "code": "ultra_long_wind",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 121,
+          "code": "maternity_baby_wind",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 122,
+          "code": "circular_area_wind",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "none",
+              "down",
+              "up"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 123,
+          "code": "fresh_air",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "off",
+              "increase_oxygen",
+              "deodorize",
+              "smart_fresh_air"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 124,
+          "code": "temp_decimal",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 9,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 125,
+          "code": "temp_accuracy",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 126,
+          "code": "portable_sense",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 127,
+          "code": "light_breeze",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "off",
+              "light_breeze",
+              "gentle_breeze",
+              "smart_light_breeze"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 128,
+          "code": "stepless_gear",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 100,
+            "min": 0,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 129,
+          "code": "custom_sleep",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 130,
+          "code": "asst_windspeed",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "none",
+              "low",
+              "mid",
+              "high",
+              "auto",
+              "test"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    }
+  ]
+}

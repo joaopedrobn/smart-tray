@@ -1,0 +1,8 @@
+{
+  "role": "elgin",
+  "device_id": "your-elgin-device-id",
+  "protocol": "3.5",
+  "protocol_authenticated": false,
+  "status": "not_configured",
+  "confirmed_commands": {}
+}

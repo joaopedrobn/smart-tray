@@ -1,0 +1,55 @@
+{
+  "commit": "83e20f5fe193a48245f521ff7119a53bafa989d1",
+  "source_path": "template/PublicPanelStripLamp/src/standModel/sceneModel/LocalScene/sceneData.ts",
+  "license": "MIT",
+  "examples": [
+    {
+      "name": "Thanksgiving",
+      "library_scene_id": 54900212,
+      "payload_hex": "01250a484860000064003d64010c5b00ba49001761",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    },
+    {
+      "name": "sea ​​dream",
+      "library_scene_id": 54900312,
+      "payload_hex": "012b035d5d6000006400f73601352b00c634009129",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    },
+    {
+      "name": "cool summer",
+      "library_scene_id": 54900412,
+      "payload_hex": "012c006464c000006400c85700c85700c85700c857009f2e009f2e009f2e009f2e00be6400be6400be6400b92c00b92c00b92c00b92c",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    },
+    {
+      "name": "forest day",
+      "library_scene_id": 54900512,
+      "payload_hex": "012602595960000064009c6300bc62007b60",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    },
+    {
+      "name": "summer idyll",
+      "library_scene_id": 54900612,
+      "payload_hex": "012a0352526000006400885000d23900fb27",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    },
+    {
+      "name": "football day",
+      "library_scene_id": 54900112,
+      "payload_hex": "0129025e5e6000006400006400786400bb64",
+      "source": "Tuya Ray Materials public template",
+      "device_compatibility": "unverified",
+      "write_validated": false
+    }
+  ]
+}

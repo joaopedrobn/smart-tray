@@ -1,0 +1,8 @@
+{
+  "role": "led",
+  "device_id": "your-led-device-id",
+  "protocol": "3.3",
+  "protocol_authenticated": false,
+  "status": "not_configured",
+  "confirmed_commands": {}
+}

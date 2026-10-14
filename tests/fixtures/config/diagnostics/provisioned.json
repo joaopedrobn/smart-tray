@@ -1,0 +1,640 @@
+{
+  "devices": [
+    {
+      "ip": "10.77.0.39",
+      "device_id": "example-led-0000000001",
+      "protocol_version": "3.3",
+      "product_id": "example-broadcast-1",
+      "origin": "broadcast",
+      "local_read": "local_read_ok",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key",
+      "role": "led",
+      "app": "Smart Life",
+      "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+      "metadata": {
+        "category": "dd",
+        "source": "user_official_app",
+        "cloud_dps_candidates": [
+          {
+            "dp_id": 20,
+            "code": "switch_led",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 21,
+            "code": "work_mode",
+            "type": "Enum",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "range": [
+                "white",
+                "colour",
+                "scene",
+                "music"
+              ]
+            }
+          },
+          {
+            "dp_id": 24,
+            "code": "colour_data",
+            "type": "Json",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "h": {
+                "min": 0,
+                "scale": 0,
+                "max": 360,
+                "step": 1
+              },
+              "s": {
+                "min": 0,
+                "scale": 0,
+                "max": 1000,
+                "step": 1
+              },
+              "v": {
+                "min": 0,
+                "scale": 0,
+                "max": 1000,
+                "step": 1
+              }
+            }
+          },
+          {
+            "dp_id": 26,
+            "code": "countdown",
+            "type": "Integer",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 20,
+            "code": "switch_led",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 21,
+            "code": "work_mode",
+            "type": "Enum",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "range": [
+                "white",
+                "colour",
+                "scene",
+                "music"
+              ]
+            }
+          },
+          {
+            "dp_id": 24,
+            "code": "colour_data",
+            "type": "Json",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "h": {
+                "min": 0,
+                "scale": 0,
+                "max": 360,
+                "step": 1
+              },
+              "s": {
+                "min": 0,
+                "scale": 0,
+                "max": 1000,
+                "step": 1
+              },
+              "v": {
+                "min": 0,
+                "scale": 0,
+                "max": 1000,
+                "step": 1
+              }
+            }
+          },
+          {
+            "dp_id": 26,
+            "code": "countdown",
+            "type": "Integer",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 27,
+            "code": "music_data",
+            "type": "Json",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "h": {
+                "min": 0,
+                "scale": 0,
+                "max": 360,
+                "step": 1
+              },
+              "s": {
+                "min": 0,
+                "scale": 0,
+                "max": 255,
+                "step": 1
+              },
+              "v": {
+                "min": 0,
+                "scale": 0,
+                "max": 255,
+                "step": 1
+              }
+            }
+          }
+        ],
+        "product_id": "example-product-led"
+      },
+      "credential": "available_dpapi",
+      "protocol_authenticated": true,
+      "provisioning_status": "provisioned"
+    },
+    {
+      "ip": "10.77.0.38",
+      "device_id": "example-switch-000002",
+      "protocol_version": "3.4",
+      "product_id": "example-broadcast-2",
+      "origin": "broadcast",
+      "local_read": "local_read_ok",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key",
+      "role": "novadigital",
+      "app": "Smart Life",
+      "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+      "metadata": {
+        "category": "kg",
+        "source": "user_official_app",
+        "cloud_dps_candidates": [
+          {
+            "dp_id": 1,
+            "code": "switch_1",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 2,
+            "code": "switch_2",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 7,
+            "code": "countdown_1",
+            "type": "Integer",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 8,
+            "code": "countdown_2",
+            "type": "Integer",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 14,
+            "code": "relay_status",
+            "type": "Enum",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {
+              "range": [
+                "power_off",
+                "power_on",
+                "last"
+              ]
+            }
+          },
+          {
+            "dp_id": 16,
+            "code": "switch_backlight",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 17,
+            "code": "cycle_time",
+            "type": "String",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 18,
+            "code": "random_time",
+            "type": "String",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 19,
+            "code": "switch_inching",
+            "type": "String",
+            "source": "cloud_status",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 1,
+            "code": "switch_1",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 2,
+            "code": "switch_2",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 7,
+            "code": "countdown_1",
+            "type": "Integer",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 8,
+            "code": "countdown_2",
+            "type": "Integer",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "min": 0,
+              "max": 86400,
+              "scale": 0,
+              "step": 1
+            }
+          },
+          {
+            "dp_id": 14,
+            "code": "relay_status",
+            "type": "Enum",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {
+              "range": [
+                "power_off",
+                "power_on",
+                "last"
+              ]
+            }
+          },
+          {
+            "dp_id": 16,
+            "code": "switch_backlight",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 17,
+            "code": "cycle_time",
+            "type": "String",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 18,
+            "code": "random_time",
+            "type": "String",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          },
+          {
+            "dp_id": 19,
+            "code": "switch_inching",
+            "type": "String",
+            "source": "cloud_functions",
+            "locally_validated": false,
+            "constraints": {}
+          }
+        ],
+        "product_id": "example-product-novadigital"
+      },
+      "credential": "available_dpapi",
+      "protocol_authenticated": true,
+      "provisioning_status": "provisioned"
+    },
+    {
+      "ip": "10.77.0.138",
+      "device_id": "example-elgin-00000003",
+      "protocol_version": "3.5",
+      "product_id": "example-broadcast-0",
+      "origin": "broadcast",
+      "local_read": "local_read_ok",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key",
+      "role": "elgin",
+      "app": "Smart Life",
+      "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+      "metadata": {
+        "category": "kt",
+        "source": "user_official_app",
+        "cloud_dps_candidates": [
+          {
+            "dp_id": 1,
+            "code": "switch",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 2,
+            "code": "temp_set",
+            "type": "Integer",
+            "source": "cloud_status",
+            "constraints": {
+              "min": 160,
+              "max": 900,
+              "scale": 1,
+              "step": 10
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 3,
+            "code": "temp_current",
+            "type": "Integer",
+            "source": "cloud_status",
+            "constraints": {
+              "min": -300,
+              "max": 1760,
+              "scale": 1,
+              "step": 10
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 4,
+            "code": "mode",
+            "type": "Enum",
+            "source": "cloud_status",
+            "constraints": {
+              "range": [
+                "cold",
+                "hot",
+                "wet",
+                "wind",
+                "auto"
+              ]
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 8,
+            "code": "mode_eco",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 12,
+            "code": "heat",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 13,
+            "code": "light",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 14,
+            "code": "lock",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 28,
+            "code": "power_consumption",
+            "type": "Integer",
+            "source": "cloud_status",
+            "constraints": {
+              "min": 0,
+              "max": 255,
+              "scale": 0,
+              "step": 1
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 33,
+            "code": "switch_horizontal",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 34,
+            "code": "gear_horizontal",
+            "type": "Enum",
+            "source": "cloud_status",
+            "constraints": {
+              "range": [
+                "off"
+              ]
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 102,
+            "code": "sleep",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 106,
+            "code": "health",
+            "type": "Boolean",
+            "source": "cloud_status",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 1,
+            "code": "switch",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 2,
+            "code": "temp_set",
+            "type": "Integer",
+            "source": "cloud_functions",
+            "constraints": {
+              "min": 160,
+              "max": 900,
+              "scale": 1,
+              "step": 10
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 4,
+            "code": "mode",
+            "type": "Enum",
+            "source": "cloud_functions",
+            "constraints": {
+              "range": [
+                "cold",
+                "hot",
+                "wet",
+                "wind",
+                "auto"
+              ]
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 8,
+            "code": "mode_eco",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 12,
+            "code": "heat",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 13,
+            "code": "light",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 14,
+            "code": "lock",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 33,
+            "code": "switch_horizontal",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 34,
+            "code": "gear_horizontal",
+            "type": "Enum",
+            "source": "cloud_functions",
+            "constraints": {
+              "range": [
+                "off"
+              ]
+            },
+            "locally_validated": false
+          },
+          {
+            "dp_id": 102,
+            "code": "sleep",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          },
+          {
+            "dp_id": 106,
+            "code": "health",
+            "type": "Boolean",
+            "source": "cloud_functions",
+            "constraints": {},
+            "locally_validated": false
+          }
+        ],
+        "product_id": "example-product-elgin"
+      },
+      "credential": "available_dpapi",
+      "protocol_authenticated": true,
+      "provisioning_status": "provisioned",
+      "migration_identity_confirmed": true,
+      "migration_source": "user_confirmed_same_id_and_mac_after_migration"
+    }
+  ]
+}

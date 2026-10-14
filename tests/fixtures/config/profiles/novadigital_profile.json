@@ -1,0 +1,188 @@
+{
+  "status": "power_control_validated",
+  "device_id": "example-switch-000002",
+  "protocol": "3.4",
+  "confirmed_dps": {
+    "1": {
+      "code": "switch_1",
+      "type": "Boolean",
+      "validation": "lan_and_user_physical"
+    },
+    "2": {
+      "code": "switch_2",
+      "type": "Boolean",
+      "validation": "lan_and_user_physical"
+    }
+  },
+  "confirmed_commands": {
+    "switch_1": {
+      "dp": 1,
+      "values": [
+        false,
+        true
+      ],
+      "transport": "lan",
+      "evidence": "diagnostics/control-tests/b8c19d04151f4c49880fdce104448267.json"
+    },
+    "switch_2": {
+      "dp": 2,
+      "values": [
+        false,
+        true
+      ],
+      "transport": "lan",
+      "evidence": "diagnostics/control-tests/c344bb88df2e4de6a98a7244a68d11d3.json"
+    }
+  },
+  "ip": "10.77.0.38",
+  "protocol_evidence": "authenticated_lan_status_response",
+  "protocol_authenticated": true,
+  "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+  "app": "Smart Life",
+  "manufacturer_user_reported": "NovaDigital",
+  "model_user_reported": null,
+  "credential": "available_dpapi",
+  "observed_dps": {
+    "1": {
+      "type": "bool",
+      "value": true,
+      "function": "switch_1"
+    },
+    "2": {
+      "type": "bool",
+      "value": true,
+      "function": "switch_2"
+    },
+    "7": {
+      "type": "int",
+      "value": 0,
+      "function": "unverified"
+    },
+    "8": {
+      "type": "int",
+      "value": 0,
+      "function": "unverified"
+    },
+    "14": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    },
+    "16": {
+      "type": "bool",
+      "value": false,
+      "function": "unverified"
+    },
+    "17": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    },
+    "18": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    },
+    "19": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    }
+  },
+  "potential_functions": [
+    {
+      "dp_id": 1,
+      "code": "switch_1",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "locally_validated": true
+    },
+    {
+      "dp_id": 2,
+      "code": "switch_2",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "locally_validated": true
+    },
+    {
+      "dp_id": 7,
+      "code": "countdown_1",
+      "type": "Integer",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 8,
+      "code": "countdown_2",
+      "type": "Integer",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 14,
+      "code": "relay_status",
+      "type": "Enum",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 16,
+      "code": "switch_backlight",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 17,
+      "code": "cycle_time",
+      "type": "String",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 18,
+      "code": "random_time",
+      "type": "String",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 19,
+      "code": "switch_inching",
+      "type": "String",
+      "source": "cloud_status",
+      "locally_validated": false
+    }
+  ],
+  "last_read_result": "local_read_ok",
+  "channel_specification": {
+    "1": {
+      "code": "switch_1",
+      "type": "Boolean",
+      "write_tested": false
+    },
+    "2": {
+      "code": "switch_2",
+      "type": "Boolean",
+      "write_tested": false
+    }
+  },
+  "control_validation": {
+    "1": {
+      "status": "power_off_and_restore_validated",
+      "change_lan_confirmed": true,
+      "change_physical_confirmed": true,
+      "restore_lan_confirmed": true,
+      "restore_physical_confirmed": true,
+      "evidence": "diagnostics/control-tests/b8c19d04151f4c49880fdce104448267.json"
+    },
+    "2": {
+      "status": "power_off_and_restore_validated",
+      "change_lan_confirmed": true,
+      "change_physical_confirmed": true,
+      "restore_lan_confirmed": true,
+      "restore_physical_confirmed": true,
+      "evidence": "diagnostics/control-tests/c344bb88df2e4de6a98a7244a68d11d3.json"
+    }
+  }
+}

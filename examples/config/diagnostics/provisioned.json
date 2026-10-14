@@ -1,0 +1,46 @@
+{
+  "devices": [
+    {
+      "role": "elgin",
+      "device_id": "your-elgin-device-id",
+      "ip": "192.0.2.10",
+      "protocol_version": "3.5",
+      "app": "Smart Life",
+      "credential": "pending",
+      "protocol_authenticated": false,
+      "identity_evidence": "pending_user_verification",
+      "metadata": {
+        "name": "elgin",
+        "cloud_dps_candidates": []
+      }
+    },
+    {
+      "role": "led",
+      "device_id": "your-led-device-id",
+      "ip": "192.0.2.20",
+      "protocol_version": "3.3",
+      "app": "Smart Life",
+      "credential": "pending",
+      "protocol_authenticated": false,
+      "identity_evidence": "pending_user_verification",
+      "metadata": {
+        "name": "led",
+        "cloud_dps_candidates": []
+      }
+    },
+    {
+      "role": "novadigital",
+      "device_id": "your-novadigital-device-id",
+      "ip": "192.0.2.30",
+      "protocol_version": "3.4",
+      "app": "Smart Life",
+      "credential": "pending",
+      "protocol_authenticated": false,
+      "identity_evidence": "pending_user_verification",
+      "metadata": {
+        "name": "novadigital",
+        "cloud_dps_candidates": []
+      }
+    }
+  ]
+}

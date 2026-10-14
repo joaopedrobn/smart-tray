@@ -1,0 +1,547 @@
+{
+  "device_id_masked": "exampl…0001",
+  "queries": [
+    {
+      "source": "device_spec_v1_1",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": 20,
+          "ability_id": null,
+          "code": "switch_led",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 21,
+          "ability_id": null,
+          "code": "work_mode",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "white",
+              "colour",
+              "scene",
+              "music"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 24,
+          "ability_id": null,
+          "code": "colour_data",
+          "type": "Json",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 26,
+          "ability_id": null,
+          "code": "countdown",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 0,
+            "max": 86400,
+            "scale": 0,
+            "step": 1,
+            "unit": "s"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 20,
+          "ability_id": null,
+          "code": "switch_led",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 21,
+          "ability_id": null,
+          "code": "work_mode",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "white",
+              "colour",
+              "scene",
+              "music"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 24,
+          "ability_id": null,
+          "code": "colour_data",
+          "type": "Json",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 26,
+          "ability_id": null,
+          "code": "countdown",
+          "type": "Integer",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "min": 0,
+            "max": 86400,
+            "scale": 0,
+            "step": 1,
+            "unit": "s"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": 27,
+          "ability_id": null,
+          "code": "music_data",
+          "type": "Json",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 255,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 255,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    },
+    {
+      "source": "device_spec_iot03",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch_led",
+          "type": "Boolean",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "work_mode",
+          "type": "Enum",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "range": [
+              "white",
+              "colour",
+              "scene",
+              "music"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "colour_data",
+          "type": "Json",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "countdown",
+          "type": "Integer",
+          "section": "status",
+          "access": "unspecified",
+          "constraints": {
+            "min": 0,
+            "max": 86400,
+            "scale": 0,
+            "step": 1,
+            "unit": "s"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "switch_led",
+          "type": "Boolean",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "work_mode",
+          "type": "Enum",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "white",
+              "colour",
+              "scene",
+              "music"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "colour_data",
+          "type": "Json",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 1000,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "countdown",
+          "type": "Integer",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "min": 0,
+            "max": 86400,
+            "scale": 0,
+            "step": 1,
+            "unit": "s"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": null,
+          "code": "music_data",
+          "type": "Json",
+          "section": "functions",
+          "access": "rw",
+          "constraints": {
+            "h": {
+              "min": 0,
+              "scale": 0,
+              "max": 360,
+              "step": 1
+            },
+            "s": {
+              "min": 0,
+              "scale": 0,
+              "max": 255,
+              "step": 1
+            },
+            "v": {
+              "min": 0,
+              "scale": 0,
+              "max": 255,
+              "step": 1
+            }
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    },
+    {
+      "source": "things_model",
+      "result": "schema_read_ok",
+      "entries": [
+        {
+          "dp_id": null,
+          "ability_id": 20,
+          "code": "switch_led",
+          "type": "Boolean",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {},
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 21,
+          "code": "work_mode",
+          "type": "Enum",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "range": [
+              "white",
+              "colour",
+              "scene",
+              "music"
+            ]
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 24,
+          "code": "colour_data",
+          "type": "String",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "maxlen": 255
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 26,
+          "code": "countdown",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 86400,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "s"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 27,
+          "code": "music_data",
+          "type": "String",
+          "section": "properties",
+          "access": "unspecified",
+          "constraints": {
+            "maxlen": 255
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 46,
+          "code": "light_length",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 10000,
+            "min": 1,
+            "scale": 0,
+            "step": 1,
+            "unit": "cm"
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 47,
+          "code": "light_pixel",
+          "type": "Integer",
+          "section": "properties",
+          "access": "ro",
+          "constraints": {
+            "max": 1024,
+            "min": 1,
+            "scale": 0,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 51,
+          "code": "dreamlight_scene_mode",
+          "type": "Raw",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "maxlen": 128
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 52,
+          "code": "dreamlightmic_music_data",
+          "type": "Raw",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "maxlen": 128
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 53,
+          "code": "lightpixel_number_set",
+          "type": "Integer",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "max": 1000,
+            "min": 1,
+            "scale": 1,
+            "step": 1
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        },
+        {
+          "dp_id": null,
+          "ability_id": 61,
+          "code": "paint_colour_data",
+          "type": "Raw",
+          "section": "properties",
+          "access": "rw",
+          "constraints": {
+            "maxlen": 128
+          },
+          "lan_mapping_confirmed": false,
+          "write_validated": false
+        }
+      ]
+    }
+  ]
+}

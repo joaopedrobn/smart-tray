@@ -1,0 +1,632 @@
+{
+  "device_id_masked": "exampl…0003",
+  "events": [
+    {
+      "category": "baseline",
+      "snapshot": {
+        "1": {
+          "type": "bool",
+          "schema_codes": [
+            "switch"
+          ],
+          "observation_validates_control": false,
+          "value": true
+        },
+        "2": {
+          "type": "int",
+          "schema_codes": [
+            "temp_set"
+          ],
+          "observation_validates_control": false,
+          "value": 240
+        },
+        "3": {
+          "type": "int",
+          "schema_codes": [
+            "temp_current"
+          ],
+          "observation_validates_control": false,
+          "value": 210
+        },
+        "4": {
+          "type": "str",
+          "schema_codes": [
+            "mode"
+          ],
+          "observation_validates_control": false,
+          "value": "cold"
+        },
+        "5": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": "mid",
+          "encoding": "observed_fan_setting",
+          "schema_enum_confirmed": false,
+          "write_validated": false
+        },
+        "8": {
+          "type": "bool",
+          "schema_codes": [
+            "mode_eco"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "12": {
+          "type": "bool",
+          "schema_codes": [
+            "heat"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "13": {
+          "type": "bool",
+          "schema_codes": [
+            "light"
+          ],
+          "observation_validates_control": false,
+          "value": true
+        },
+        "14": {
+          "type": "bool",
+          "schema_codes": [
+            "lock"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "19": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 1
+        },
+        "28": {
+          "type": "int",
+          "schema_codes": [
+            "power_consumption"
+          ],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "33": {
+          "type": "bool",
+          "schema_codes": [
+            "switch_horizontal"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "34": {
+          "type": "str",
+          "schema_codes": [
+            "gear_horizontal"
+          ],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 5
+        },
+        "101": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "102": {
+          "type": "bool",
+          "schema_codes": [
+            "sleep"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "103": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "104": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "105": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "106": {
+          "type": "bool",
+          "schema_codes": [
+            "health"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "107": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "108": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 6
+        },
+        "109": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "110": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "111": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "112": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "113": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 30
+        },
+        "114": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "115": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "116": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "117": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "118": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "119": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "120": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "121": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "122": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 4
+        },
+        "123": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "unmapped_literal",
+          "observed_literal": "off",
+          "write_value_permitted": false
+        },
+        "124": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "125": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "126": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "127": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "unmapped_literal",
+          "observed_literal": "off",
+          "write_value_permitted": false
+        },
+        "128": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "129": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "130": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 4
+        }
+      },
+      "changes": {},
+      "writes_sent": 0
+    },
+    {
+      "category": "fan",
+      "snapshot": {
+        "1": {
+          "type": "bool",
+          "schema_codes": [
+            "switch"
+          ],
+          "observation_validates_control": false,
+          "value": true
+        },
+        "2": {
+          "type": "int",
+          "schema_codes": [
+            "temp_set"
+          ],
+          "observation_validates_control": false,
+          "value": 240
+        },
+        "3": {
+          "type": "int",
+          "schema_codes": [
+            "temp_current"
+          ],
+          "observation_validates_control": false,
+          "value": 210
+        },
+        "4": {
+          "type": "str",
+          "schema_codes": [
+            "mode"
+          ],
+          "observation_validates_control": false,
+          "value": "cold"
+        },
+        "5": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": "low",
+          "encoding": "observed_fan_setting",
+          "schema_enum_confirmed": false,
+          "write_validated": false
+        },
+        "8": {
+          "type": "bool",
+          "schema_codes": [
+            "mode_eco"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "12": {
+          "type": "bool",
+          "schema_codes": [
+            "heat"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "13": {
+          "type": "bool",
+          "schema_codes": [
+            "light"
+          ],
+          "observation_validates_control": false,
+          "value": true
+        },
+        "14": {
+          "type": "bool",
+          "schema_codes": [
+            "lock"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "19": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 1
+        },
+        "28": {
+          "type": "int",
+          "schema_codes": [
+            "power_consumption"
+          ],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "33": {
+          "type": "bool",
+          "schema_codes": [
+            "switch_horizontal"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "34": {
+          "type": "str",
+          "schema_codes": [
+            "gear_horizontal"
+          ],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 5
+        },
+        "101": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "102": {
+          "type": "bool",
+          "schema_codes": [
+            "sleep"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "103": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "104": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "105": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "106": {
+          "type": "bool",
+          "schema_codes": [
+            "health"
+          ],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "107": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "108": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 6
+        },
+        "109": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "110": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "111": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "112": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "113": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 30
+        },
+        "114": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "115": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "116": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "117": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "118": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "119": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "120": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "121": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "122": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 4
+        },
+        "123": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "unmapped_literal",
+          "observed_literal": "off",
+          "write_value_permitted": false
+        },
+        "124": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "125": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "126": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "127": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "unmapped_literal",
+          "observed_literal": "off",
+          "write_value_permitted": false
+        },
+        "128": {
+          "type": "int",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": 0
+        },
+        "129": {
+          "type": "bool",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "value": false
+        },
+        "130": {
+          "type": "str",
+          "schema_codes": [],
+          "observation_validates_control": false,
+          "encoding": "opaque",
+          "length": 4
+        }
+      },
+      "changes": {
+        "5": {
+          "before": {
+            "type": "str",
+            "schema_codes": [],
+            "observation_validates_control": false,
+            "value": "mid",
+            "encoding": "observed_fan_setting",
+            "schema_enum_confirmed": false,
+            "write_validated": false
+          },
+          "after": {
+            "type": "str",
+            "schema_codes": [],
+            "observation_validates_control": false,
+            "value": "low",
+            "encoding": "observed_fan_setting",
+            "schema_enum_confirmed": false,
+            "write_validated": false
+          },
+          "value_changed": true,
+          "interpretation": "correlation_only_not_function_validation"
+        }
+      },
+      "writes_sent": 0
+    }
+  ]
+}

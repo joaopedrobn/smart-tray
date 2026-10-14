@@ -1,0 +1,692 @@
+{
+  "model_user_reported": "HJFC12C2WGCG",
+  "status": "local_temperature_and_mid_fan_control_validated",
+  "device_id": "example-elgin-00000003",
+  "protocol": "3.5",
+  "confirmed_dps": {
+    "2": {
+      "code": "temp_set",
+      "locally_validated": true,
+      "scale": 1,
+      "unit": "c"
+    }
+  },
+  "confirmed_commands": {
+    "temp_set": {
+      "dp": 2,
+      "transport": "lan",
+      "type": "Integer",
+      "scale": 1,
+      "unit": "c",
+      "min": 16,
+      "max": 32,
+      "step": 1,
+      "physical_confirmed": true,
+      "validated_transitions": [
+        [
+          240,
+          250
+        ],
+        [
+          250,
+          240
+        ]
+      ],
+      "evidence": "diagnostics/elgin-tests/a7a5c6044bf5472dbc9a6261de5c2ad1.json"
+    },
+    "windspeed": {
+      "dp": 5,
+      "transport": "lan",
+      "type": "Enum",
+      "values": [
+        "mid"
+      ],
+      "physical_confirmed": true,
+      "classification": "oem_observed_not_standard_dp_documented",
+      "validated_transitions": [
+        [
+          "low",
+          "mid"
+        ]
+      ],
+      "evidence": "diagnostics/elgin-tests/ca5220f58135476c8b65a654bbf9c478.json"
+    }
+  },
+  "ip": "10.77.0.138",
+  "protocol_evidence": "authenticated_lan_status_response",
+  "protocol_authenticated": true,
+  "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+  "app": "Smart Life",
+  "manufacturer_user_reported": "Elgin",
+  "credential": "available_dpapi",
+  "last_read_result": "local_read_ok",
+  "migration_identity_confirmed": true,
+  "observed_dps": {
+    "1": {
+      "type": "bool",
+      "value": true
+    },
+    "2": {
+      "type": "int",
+      "value": 240
+    },
+    "3": {
+      "type": "int",
+      "value": 210
+    },
+    "4": {
+      "type": "str",
+      "value": "cold"
+    },
+    "5": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "8": {
+      "type": "bool",
+      "value": false
+    },
+    "12": {
+      "type": "bool",
+      "value": false
+    },
+    "13": {
+      "type": "bool",
+      "value": true
+    },
+    "14": {
+      "type": "bool",
+      "value": false
+    },
+    "19": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "28": {
+      "type": "int",
+      "value": 0
+    },
+    "33": {
+      "type": "bool",
+      "value": false
+    },
+    "34": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "101": {
+      "type": "bool",
+      "value": false
+    },
+    "102": {
+      "type": "bool",
+      "value": false
+    },
+    "103": {
+      "type": "bool",
+      "value": false
+    },
+    "104": {
+      "type": "bool",
+      "value": false
+    },
+    "105": {
+      "type": "bool",
+      "value": false
+    },
+    "106": {
+      "type": "bool",
+      "value": false
+    },
+    "107": {
+      "type": "int",
+      "value": 0
+    },
+    "108": {
+      "type": "int",
+      "value": 6
+    },
+    "109": {
+      "type": "bool",
+      "value": false
+    },
+    "110": {
+      "type": "bool",
+      "value": false
+    },
+    "111": {
+      "type": "int",
+      "value": 0
+    },
+    "112": {
+      "type": "int",
+      "value": 0
+    },
+    "113": {
+      "type": "int",
+      "value": 30
+    },
+    "114": {
+      "type": "bool",
+      "value": false
+    },
+    "115": {
+      "type": "bool",
+      "value": false
+    },
+    "116": {
+      "type": "bool",
+      "value": false
+    },
+    "117": {
+      "type": "bool",
+      "value": false
+    },
+    "118": {
+      "type": "bool",
+      "value": false
+    },
+    "119": {
+      "type": "bool",
+      "value": false
+    },
+    "120": {
+      "type": "bool",
+      "value": false
+    },
+    "121": {
+      "type": "bool",
+      "value": false
+    },
+    "122": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "123": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "124": {
+      "type": "int",
+      "value": 0
+    },
+    "125": {
+      "type": "bool",
+      "value": false
+    },
+    "126": {
+      "type": "bool",
+      "value": false
+    },
+    "127": {
+      "type": "str",
+      "value": "[withheld]"
+    },
+    "128": {
+      "type": "int",
+      "value": 0
+    },
+    "129": {
+      "type": "bool",
+      "value": false
+    },
+    "130": {
+      "type": "str",
+      "value": "[withheld]"
+    }
+  },
+  "potential_functions": [
+    {
+      "dp_id": 1,
+      "code": "switch",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 2,
+      "code": "temp_set",
+      "type": "Integer",
+      "source": "cloud_status",
+      "constraints": {
+        "min": 160,
+        "max": 900,
+        "scale": 1,
+        "step": 10
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 3,
+      "code": "temp_current",
+      "type": "Integer",
+      "source": "cloud_status",
+      "constraints": {
+        "min": -300,
+        "max": 1760,
+        "scale": 1,
+        "step": 10
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 4,
+      "code": "mode",
+      "type": "Enum",
+      "source": "cloud_status",
+      "constraints": {
+        "range": [
+          "cold",
+          "hot",
+          "wet",
+          "wind",
+          "auto"
+        ]
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 8,
+      "code": "mode_eco",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 12,
+      "code": "heat",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 13,
+      "code": "light",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 14,
+      "code": "lock",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 28,
+      "code": "power_consumption",
+      "type": "Integer",
+      "source": "cloud_status",
+      "constraints": {
+        "min": 0,
+        "max": 255,
+        "scale": 0,
+        "step": 1
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 33,
+      "code": "switch_horizontal",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 34,
+      "code": "gear_horizontal",
+      "type": "Enum",
+      "source": "cloud_status",
+      "constraints": {
+        "range": [
+          "off"
+        ]
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 102,
+      "code": "sleep",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 106,
+      "code": "health",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 1,
+      "code": "switch",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 2,
+      "code": "temp_set",
+      "type": "Integer",
+      "source": "cloud_functions",
+      "constraints": {
+        "min": 160,
+        "max": 900,
+        "scale": 1,
+        "step": 10
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 4,
+      "code": "mode",
+      "type": "Enum",
+      "source": "cloud_functions",
+      "constraints": {
+        "range": [
+          "cold",
+          "hot",
+          "wet",
+          "wind",
+          "auto"
+        ]
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 8,
+      "code": "mode_eco",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 12,
+      "code": "heat",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 13,
+      "code": "light",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 14,
+      "code": "lock",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 33,
+      "code": "switch_horizontal",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 34,
+      "code": "gear_horizontal",
+      "type": "Enum",
+      "source": "cloud_functions",
+      "constraints": {
+        "range": [
+          "off"
+        ]
+      },
+      "locally_validated": false
+    },
+    {
+      "dp_id": 102,
+      "code": "sleep",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    },
+    {
+      "dp_id": 106,
+      "code": "health",
+      "type": "Boolean",
+      "source": "cloud_functions",
+      "constraints": {},
+      "locally_validated": false
+    }
+  ],
+  "identified_dps": {
+    "1": {
+      "code": "switch",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "2": {
+      "code": "temp_set",
+      "type": "Integer",
+      "constraints": {
+        "min": 160,
+        "max": 900,
+        "scale": 1,
+        "step": 10
+      },
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": true,
+      "declared_writable": true
+    },
+    "3": {
+      "code": "temp_current",
+      "type": "Integer",
+      "constraints": {
+        "min": -300,
+        "max": 1760,
+        "scale": 1,
+        "step": 10
+      },
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": false
+    },
+    "4": {
+      "code": "mode",
+      "type": "Enum",
+      "constraints": {
+        "range": [
+          "cold",
+          "hot",
+          "wet",
+          "wind",
+          "auto"
+        ]
+      },
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "8": {
+      "code": "mode_eco",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "12": {
+      "code": "heat",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "13": {
+      "code": "light",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "14": {
+      "code": "lock",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "28": {
+      "code": "power_consumption",
+      "type": "Integer",
+      "constraints": {
+        "min": 0,
+        "max": 255,
+        "scale": 0,
+        "step": 1
+      },
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": false
+    },
+    "33": {
+      "code": "switch_horizontal",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "34": {
+      "code": "gear_horizontal",
+      "type": "Enum",
+      "constraints": {
+        "range": [
+          "off"
+        ]
+      },
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "102": {
+      "code": "sleep",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "106": {
+      "code": "health",
+      "type": "Boolean",
+      "constraints": {},
+      "observed_on_lan": true,
+      "schema_confirmed": true,
+      "write_validated": false,
+      "declared_writable": true
+    },
+    "5": {
+      "code": "windspeed",
+      "lan_type": "str",
+      "model_type": "Enum",
+      "schema_confirmed": false,
+      "model_ability_id": 5,
+      "observed_on_lan": true,
+      "write_validated": true,
+      "validated_write_values": [
+        "mid"
+      ],
+      "classification": "oem_observed_not_standard_dp_documented"
+    }
+  },
+  "unknown_dps": [
+    "5",
+    "19",
+    "101",
+    "103",
+    "104",
+    "105",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121",
+    "122",
+    "123",
+    "124",
+    "125",
+    "126",
+    "127",
+    "128",
+    "129",
+    "130"
+  ],
+  "control_validation_status": "temperature_and_fan_mid_validated_other_targets_disabled",
+  "temperature_unit_confirmed": "c",
+  "temperature_unit_evidence": "user_confirmed_smart_life_24_celsius_matches_lan_240_scale_1",
+  "power_test_status": "deferred_by_user_keep_power_on",
+  "temperature_restore_policy": "ask_user_before_any_restoration",
+  "temperature_validation_result": "24_to_25_and_explicit_restore_24_lan_and_physical_confirmed",
+  "observed_fan_settings": {
+    "low": {
+      "label": "Baixa",
+      "dp": 5,
+      "evidence": "diagnostics/elgin-research/session-547a173fad8342aabf2dc08bbe848bcc.json",
+      "write_validated": false
+    },
+    "mid": {
+      "label": "Média",
+      "dp": 5,
+      "evidence": "diagnostics/elgin-research/session-547a173fad8342aabf2dc08bbe848bcc.json",
+      "write_validated": true
+    }
+  },
+  "fan_manual_evidence": [
+    "diagnostics/elgin-research/session-547a173fad8342aabf2dc08bbe848bcc.json",
+    "diagnostics/elgin-research/session-ad51b3c964544e57a8449791c10eebcd.json"
+  ],
+  "fan_test_classification": "oem_observed_not_explicitly_documented_in_standard_write_dp_schema"
+}

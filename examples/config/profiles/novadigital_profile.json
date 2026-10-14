@@ -1,0 +1,8 @@
+{
+  "role": "novadigital",
+  "device_id": "your-novadigital-device-id",
+  "protocol": "3.4",
+  "protocol_authenticated": false,
+  "status": "not_configured",
+  "confirmed_commands": {}
+}

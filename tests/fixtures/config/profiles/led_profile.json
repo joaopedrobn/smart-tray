@@ -1,0 +1,147 @@
+{
+  "status": "power_control_validated",
+  "device_id": "example-led-0000000001",
+  "protocol": "3.3",
+  "confirmed_dps": {
+    "20": {
+      "code": "switch_led",
+      "type": "Boolean",
+      "validation": "lan_and_user_physical"
+    }
+  },
+  "confirmed_commands": {
+    "switch_led": {
+      "dp": 20,
+      "values": [
+        false,
+        true
+      ],
+      "transport": "lan",
+      "evidence": "diagnostics/control-tests/cea70267cb4b4da2a40b9c2cd70e4d2d.json"
+    }
+  },
+  "ip": "10.77.0.39",
+  "protocol_evidence": "authenticated_lan_status_response",
+  "protocol_authenticated": true,
+  "identity_evidence": "official_app_id_and_mac_match_discovery_and_arp",
+  "app": "Smart Life",
+  "manufacturer_user_reported": null,
+  "model_user_reported": null,
+  "credential": "available_dpapi",
+  "observed_dps": {
+    "20": {
+      "type": "bool",
+      "value": true,
+      "function": "switch_led"
+    },
+    "21": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    },
+    "24": {
+      "type": "str",
+      "value": "[withheld_pending_schema_review]",
+      "function": "unverified"
+    },
+    "26": {
+      "type": "int",
+      "value": 0,
+      "function": "unverified"
+    },
+    "46": {
+      "type": "int",
+      "value": 1000,
+      "function": "unverified"
+    },
+    "47": {
+      "type": "int",
+      "value": 200,
+      "function": "unverified"
+    },
+    "53": {
+      "type": "int",
+      "value": 100,
+      "function": "unverified"
+    }
+  },
+  "potential_functions": [
+    {
+      "dp_id": 20,
+      "code": "switch_led",
+      "type": "Boolean",
+      "source": "cloud_status",
+      "locally_validated": true
+    },
+    {
+      "dp_id": 21,
+      "code": "work_mode",
+      "type": "Enum",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 24,
+      "code": "colour_data",
+      "type": "Json",
+      "source": "cloud_status",
+      "locally_validated": false
+    },
+    {
+      "dp_id": 26,
+      "code": "countdown",
+      "type": "Integer",
+      "source": "cloud_status",
+      "locally_validated": false
+    }
+  ],
+  "last_read_result": "local_read_ok",
+  "brand_user_reported": "Outsmart",
+  "control_validation": {
+    "20": {
+      "status": "power_off_and_restore_validated",
+      "change_lan_confirmed": true,
+      "change_physical_confirmed": true,
+      "restore_lan_confirmed": true,
+      "restore_physical_confirmed": true,
+      "evidence": "diagnostics/control-tests/cea70267cb4b4da2a40b9c2cd70e4d2d.json"
+    }
+  },
+  "mode_specification": {
+    "dp": 21,
+    "available": [
+      "white",
+      "colour",
+      "scene",
+      "music"
+    ],
+    "observed": "scene",
+    "write_tested": false
+  },
+  "colour_inspection": {
+    "dp": 24,
+    "observed_encoding": "hex_12_chars",
+    "schema": "HSV",
+    "ranges": {
+      "h": [
+        0,
+        360
+      ],
+      "s": [
+        0,
+        1000
+      ],
+      "v": [
+        0,
+        1000
+      ]
+    },
+    "write_tested": false
+  },
+  "advanced_research": {
+    "phase": "A",
+    "status": "awaiting_cloud_schema_and_manual_comparisons",
+    "report": "diagnostics/led-rgbic.md",
+    "advanced_writes_validated": false
+  }
+}

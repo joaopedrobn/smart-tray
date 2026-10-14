@@ -1,0 +1,64 @@
+{
+  "interface_ip": "10.77.0.66",
+  "network": "10.77.0.0/24",
+  "duration_seconds": 20,
+  "poll": false,
+  "force_scan": false,
+  "discovery_udp_ports": [
+    6666,
+    6667,
+    7000
+  ],
+  "devices": [
+    {
+      "ip": "10.77.0.138",
+      "device_id": "example-elgin-00000003",
+      "protocol_version": "3.5",
+      "product_id": "example-broadcast-0",
+      "origin": "broadcast",
+      "local_read": "not_attempted",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key"
+    },
+    {
+      "ip": "10.77.0.39",
+      "device_id": "example-led-0000000001",
+      "protocol_version": "3.3",
+      "product_id": "example-broadcast-1",
+      "origin": "broadcast",
+      "local_read": "not_attempted",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key"
+    },
+    {
+      "ip": "10.77.0.38",
+      "device_id": "example-switch-000002",
+      "protocol_version": "3.4",
+      "product_id": "example-broadcast-2",
+      "origin": "broadcast",
+      "local_read": "not_attempted",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key"
+    },
+    {
+      "ip": "10.77.0.68",
+      "device_id": "example-unknown-3",
+      "protocol_version": "3.3",
+      "product_id": "example-broadcast-4",
+      "origin": "broadcast",
+      "local_read": "not_attempted",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key"
+    },
+    {
+      "ip": "10.77.0.69",
+      "device_id": "example-unknown-4",
+      "protocol_version": "3.3",
+      "product_id": "example-broadcast-4",
+      "origin": "broadcast",
+      "local_read": "not_attempted",
+      "local_control": "not_tested",
+      "local_key_requirement": "required_for_authenticated_access; legacy_3.1_read_may_not_require_key"
+    }
+  ]
+}
